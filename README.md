@@ -4,6 +4,7 @@
   - **git config --global user.name "username"**
   - **git config --global user.email "you email"**
 (optional: make notepad++ default editor)
+**HEAD** - kind of a '_pointer_' hat points to last commit of the current branch
 
 #Commands:
   - **git init** - initializez a new git repository
@@ -24,4 +25,14 @@
 #Renaming and deleting files with GIT:
   - **git mv "file name" "new name"** - _moves_ the name of that file to another name, bassicaly changes the name
   - **git rm "file name"** - removes the file
+
+#Advanced GIT commands (branching, mergin, etc):
+  - **git dif 'one commit hash code' '2nd comming hash code'** - shows difference between these commits, what was changed, etc
+  - **git checkout -b 'branch name'** - creates a new branch, different than the master/main branch and also moves you to the newly created branch
+  - **git checnout 'branch name'** - moves to a different branch
+  - **git merge 'name of the branch that u want to merge'** - while on master branch use this command to merge the updates from a different branch
+  - **git tag 'tag name'** - creates a tag for the latest commit  **git tag -d 'tag name'** - deletes the tag
+  - **git tag -a v1.0 -m 'release 1.0'** - create a annoted tag named v1.0 with a message
+  - **git stash** - saves progress in a stash
+  - **git reset 'commit id' --soft** - one way of reseting ( least destructive of them all) changes where HEAD is pointed = there is also --mixed which is default/ --hard = any changines and stuff on staging area wipes out all of them
   - 
