@@ -35,4 +35,10 @@
   - **git tag -a v1.0 -m 'release 1.0'** - create a annoted tag named v1.0 with a message
   - **git stash** - saves progress in a stash
   - **git reset 'commit id' --soft** - one way of reseting ( least destructive of them all) changes where HEAD is pointed = there is also --mixed which is default/ --hard = any changines and stuff on staging area wipes out all of them
-  - 
+
+#Advanced remote with GitHub and BitBucket:
+  - add existing repo to bitbucked:
+            - go to project path -> **git remode add origin 'repo link'** -> **git push -u origin master --all/--tags** ( pushes the refs/tags for the first time )
+            - you can remove the origin -> **git remote rm origin**
+            - you can fetch the latest version from github of the repo -> **git pull origin master**
+    
